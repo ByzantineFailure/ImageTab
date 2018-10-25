@@ -1,0 +1,13 @@
+{
+  "name": "ImageTab",
+  "author": "byzanitnefailure@gmail.com <Michael Eaton>",
+  "version": "0.0.1",
+  "description": "Provide a context menu item when right-clicking images to open it in a new tab",
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["ImageTab.js"],
+    "persistent": true
+  }
+}
