@@ -4,7 +4,10 @@
   "version": "0.0.1",
   "description": "Provide a context menu item when right-clicking images to open it in a new tab",
   "permissions": [
-    "contextMenus"
+    "clipboardWrite",
+    "contextMenus",
+    "tabs",
+    "windows"
   ],
   "icons": {
     "16": "assets/icon-16.png",
@@ -16,7 +19,10 @@
     "176": "assets/icon-176.png"
   },
   "background": {
-    "scripts": ["ImageTab.js"],
-    "persistent": true
+    "persistent": true,
+    "scripts": ["ImageTab.js"]
+  },
+  "browser_action": {
+    "default_title": "Copy all tabs to clipboard"
   }
 }
