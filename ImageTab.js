@@ -3,6 +3,8 @@ browser.contextMenus.create({
   contexts: ['image'],
   onclick: (info, tab) => {
     browser.tabs.create({
+      active: false,
+      index: tab.index + 1,
       url: info.srcUrl,
     }); 
   },
